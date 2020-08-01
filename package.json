@@ -1,0 +1,22 @@
+{
+  "name": "100DaysCoding",
+  "version": "1.0.0",
+  "description": "Serie de retos diarios para mejorar como programador",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/albertoalejandro10/100DaysCoding.git"
+  },
+  "keywords": [
+    "Challenge"
+  ],
+  "author": "AlbertoAlejandro10",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albertoalejandro10/100DaysCoding/issues"
+  },
+  "homepage": "https://github.com/albertoalejandro10/100DaysCoding#readme"
+}
