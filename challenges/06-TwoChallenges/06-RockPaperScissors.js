@@ -3,27 +3,58 @@ El reto del día de hoy es escribir un programa que reciba como parámetro “pi
 ppt(“piedra”, “papel”) ➞ “El ganador es el jugador 2”
 */
 
-let valor1 = prompt('Player1: Ingresa tu jugada', 'Piedra, Papel o Tijera');
+document.write(`Al mejor de tres <br/>`);
 
-let valor2 = prompt('Player2: Ingresa tu jugada', 'Piedra, Papel o Tijera');
+    var contador1 = 0;
+    var contador2 = 0;
 
+    for(let i = 0; i<=3; i++){
 
-function game(valor1, valor2){
-    if(valor1 == 'Piedra' && valor2 == 'Tijera'){
+        llamado();
 
-        document.write('Player 1: Win');
+        if(contador1 == 2){
+            let id = 1;
+            imprimir(id);
+            break;
+        }else if(contador2 == 2){
+            let id = 2;
+            imprimir(id);
+            break;
+        }
 
-    }else if(valor1 == 'Papel' && valor2 == 'Piedra'){
-
-        document.write('Player 1: Win');
-
-    }else if(valor1 == 'Tijera' && valor2 == 'Papel'){
-
-        document.write('Player 1: Win');
-
-    }else{
-        document.write('Player 2: Win');
     }
-}
 
-game(valor1, valor2);
+
+    function imprimir(id){
+        document.write(`</br> Jugador${id}: Win`);
+    }
+
+
+    function llamado(){
+        
+        let valor1 = prompt('Player1: Ingresa tu jugada', 'Piedra - Papel - Tijera');
+
+        let valor2 = prompt('Player2: Ingresa tu jugada', 'Piedra - Papel - Tijera');
+
+
+        calculo(valor1 , valor2);
+    }
+
+    function calculo(valor1, valor2){
+                
+        if(valor1 == 'Piedra' && valor2 == 'Tijera'){
+    
+            contador1++;
+    
+        }else if(valor1 == 'Papel' && valor2 == 'Piedra'){
+    
+            contador1++;
+    
+        }else if(valor1 == 'Tijera' && valor2 == 'Papel'){
+    
+            contador1++;
+    
+        }else{
+            contador2++;
+        }
+    }
