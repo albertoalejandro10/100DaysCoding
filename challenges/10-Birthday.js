@@ -11,4 +11,8 @@ let tiempoSeg = tiempo / 1000;
 let tiempoMin = tiempoSeg / 60;
 let tiempoHr = tiempoMin / 60;
 let tiempoDay = Math.floor(tiempoHr / 24);
+//------------------
+let time = Math.floor((((tiempo/1000)/60)/60)/24);
+
 document.write(`<h3>Faltan ${tiempoDay} días para tu cumpleaños</h3>`);
+document.write(`<h3 style="color: blue;">Faltan ${time} días para tu cumpleaños</h3>`);
